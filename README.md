@@ -3,8 +3,8 @@
 ## Project Information
 
 **Team Members:**
-- 23201136 - Zawad Ahsan
-- 23101228 - Abdullah Sajid Nafi
+- Zawad Ahsan
+- Abdullah Sajid Nafi
 
 **Course:** CSE 422 FALL25 - Section 17  
 **Date:** January 2026
@@ -205,9 +205,8 @@ Potential improvements for future iterations:
 ## Contributors
 
 This project was developed as part of CSE422 coursework by:
-- **Zawad Ahsan** (23201136)
-- **Abdullah Sajid Nafi** (23101228)
-
+- **Zawad Ahsan** 
+- **Abdullah Sajid Nafi** 
 ## License
 
 This project is created for educational purposes as part of CSE422 coursework.
