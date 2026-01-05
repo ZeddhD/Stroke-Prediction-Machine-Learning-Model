@@ -6,7 +6,7 @@
 - Zawad Ahsan
 - Abdullah Sajid Nafi
 
-**Course:** CSE 422 FALL25 - Section 17  
+**Course:** CSE 422 FALL25 
 **Date:** January 2026
 
 ## Project Overview
