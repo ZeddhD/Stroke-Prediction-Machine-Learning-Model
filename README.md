@@ -1,30 +1,21 @@
 # Stroke Prediction Using Machine Learning
 
-## Project Information
+## Overview
 
-**Team Members:**
-- Zawad Ahsan
-- Abdullah Sajid Nafi
-
-**Course:** CSE 422 FALL25 
-**Date:** January 2026
-
-## Project Overview
-
-This project implements and compares multiple machine learning models to predict stroke risk in patients based on various health and demographic features. The goal is to identify the most accurate model for early stroke prediction, which can assist healthcare professionals in preventive care.
+A comprehensive machine learning project that implements and compares multiple algorithms to predict stroke risk in patients based on health and demographic features. The goal is to identify the most accurate model for early stroke prediction to assist healthcare professionals in preventive care.
 
 ## Dataset
 
 **Source:** Healthcare Dataset Stroke Data  
 **Download Link:** [Google Drive](https://drive.google.com/file/d/18503AUrsLd25Vd-UgQK8IDy2ZlliKQ5g/view)
 
-The dataset contains patient information including:
+### Features
 - **Demographic Data:** Age, gender
 - **Health Indicators:** BMI (Body Mass Index), hypertension, heart disease status
 - **Lifestyle Factors:** Average glucose level, smoking status
 - **Other Attributes:** Marital status, residential information
 
-**Dataset Statistics:**
+### Dataset Statistics
 - Total Samples: 5,110 patients
 - Features: 12 attributes
 - Target Variable: Stroke (Binary: 0 = No Stroke, 1 = Stroke)
@@ -75,7 +66,6 @@ Performance metrics used:
 - **Important Features:** Age, hypertension, heart disease, average glucose level, and BMI showed positive correlation with stroke risk
 
 ### Model Performance
-All three primary models (Logistic Regression, Random Forest, Neural Network) demonstrated competitive performance with different strengths:
 
 **Logistic Regression:**
 - Simple, interpretable, and computationally efficient
@@ -94,27 +84,26 @@ All three primary models (Logistic Regression, Random Forest, Neural Network) de
 - Higher computational cost but competitive performance
 - Best for large datasets with hidden patterns
 
-### Best Model Selection
-The model selection depends on deployment context:
+### Model Selection Guide
 - **For Interpretability:** Logistic Regression (medical professionals can understand coefficient weights)
 - **For Balanced Performance:** Random Forest (handles overfitting well, provides feature importance)
 - **For Complex Pattern Detection:** Neural Network (best for large datasets with hidden patterns)
 
 ## Clinical Implications
 
-In medical diagnosis, **minimizing False Negatives** (missing actual stroke cases) is critical as it directly impacts patient safety. Our models were configured with class weight balancing to address this priority and improve detection of minority class (stroke cases).
+In medical diagnosis, **minimizing False Negatives** (missing actual stroke cases) is critical as it directly impacts patient safety. Models were configured with class weight balancing to address this priority and improve detection of minority class (stroke cases).
 
 ## Project Structure
 
 ```
-CSE422-Stroke-Prediction-Using-Machine-Learning-main/
+Stroke-Prediction-Machine-Learning-Model/
 │
-├── Healthcare Dataset Stroke Data.csv          # Dataset file
-├── Stroke_Prediction_Machine_Learning_Model.ipynb    # Detailed notebook with extensive comments
-├── Stroke_Prediction_Machine_Learning_Model_Clean.ipynb  # Clean notebook with concise comments
-├── Stroke Prediction Machine Learning Model.docx     # Project documentation
-├── README.md                                   # Project overview (this file)
-└── .venv/                                      # Virtual environment
+├── Healthcare Dataset Stroke Data.csv
+├── Stroke Prediction Machine Learning Model.ipynb
+├── Stroke Prediction Machine Learning Model Explanation.ipynb
+├── Project Report.pdf
+├── README.md
+└── requirements.txt
 ```
 
 ## Installation & Setup
@@ -123,48 +112,27 @@ CSE422-Stroke-Prediction-Using-Machine-Learning-main/
 - Python 3.8 or higher
 - Jupyter Notebook or JupyterLab
 
-### Required Libraries
-```bash
-pip install pandas numpy seaborn matplotlib scikit-learn tensorflow keras imbalanced-learn
-```
+### Installation
 
-### Running the Project
-
-1. **Clone or download the project:**
+1. **Clone the repository:**
    ```bash
-   cd CSE422-Stroke-Prediction-Using-Machine-Learning-main
+   git clone <repository-url>
+   cd Stroke-Prediction-Machine-Learning-Model
    ```
 
-2. **Activate virtual environment (if available):**
-   ```bash
-   .venv\Scripts\activate  # Windows
-   ```
-
-3. **Install dependencies:**
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Open Jupyter Notebook:**
+3. **Launch Jupyter Notebook:**
    ```bash
    jupyter notebook
    ```
 
-5. **Run the notebook:**
-   - For detailed explanation: `Stroke_Prediction_Machine_Learning_Model.ipynb`
-   - For clean version: `Stroke_Prediction_Machine_Learning_Model_Clean.ipynb`
-
-## Notebooks Overview
-
-### Stroke_Prediction_Machine_Learning_Model.ipynb
-- **Purpose:** Comprehensive notebook with extensive educational comments
-- **Best For:** Learning, understanding methodology, lab demonstrations
-- **Features:** Detailed explanations for every step, medical context, best practices
-
-### Stroke_Prediction_Machine_Learning_Model_Clean.ipynb
-- **Purpose:** Clean, production-ready notebook with concise comments
-- **Best For:** Quick review, presentation, deployment reference
-- **Features:** Professional 1-2 sentence comments, streamlined workflow
+4. **Open and run the notebook:**
+   - `Stroke Prediction Machine Learning Model.ipynb` - Main analysis
+   - `Stroke Prediction Machine Learning Model Explanation.ipynb` - Detailed explanations
 
 ## Technologies Used
 
@@ -194,7 +162,6 @@ The project successfully demonstrates:
 
 ## Future Enhancements
 
-Potential improvements for future iterations:
 - Implement SMOTE for advanced class imbalance handling
 - Hyperparameter tuning using GridSearchCV or RandomizedSearchCV
 - Feature importance analysis to identify key stroke risk factors
@@ -202,19 +169,9 @@ Potential improvements for future iterations:
 - Explainable AI (SHAP values) for model interpretability in clinical settings
 - Ensemble voting combining multiple models for improved accuracy
 
-## Contributors
-
-This project was developed as part of CSE422 coursework by:
-- **Zawad Ahsan** 
-- **Abdullah Sajid Nafi** 
 ## License
 
-This project is created for educational purposes as part of CSE422 coursework.
-
-## Acknowledgments
-
-- Dataset source: Healthcare Stroke Data
-- Course: CSE 422 FALL25 - Section 17
+This project is created for educational purposes.
 
 ---
 
